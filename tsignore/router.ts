@@ -135,7 +135,7 @@ export class Router {
       return (
         cb && {
           cb: cb,
-          params: params.reduce(function(h, kv) {
+          params: params.reduce(function (h, kv) {
             h[kv[0]] = kv[1]
             return h
           }, {}),
